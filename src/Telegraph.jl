@@ -2,12 +2,15 @@ module Telegraph
 
 using Reexport
 
-@reexport RandomWalker
-@reexport DataFrames
-@reexport Random
-@reexport Distributions
+@reexport using RandomWalker
+@reexport using DataFrames
+@reexport using Random
+@reexport using Distributions
+@reexport using Chain
 
 export
+	telegraph_points,
+	telegraph_time_dist,
 	update,
 	get_all_indices,
 	get_indices,
@@ -17,4 +20,5 @@ export
 include("telegraph_structs.jl")
 include("update.jl")
 include("times_indices.jl")
+
 end

@@ -5,7 +5,6 @@ function get_all_indices(state_time_series)
 	push!(tᵦ,1)
 
 
-
 	# Push body indices
 	for i in 2:size(state_time_series,1)
 		if state_time_series[i-1] == 0 && state_time_series[i] == 1
@@ -17,7 +16,6 @@ function get_all_indices(state_time_series)
 	push!(tᵦ,size(state_time_series,1))
 	return tᵦ
 end
-
 
 
 # Get indices per each state
