@@ -2,6 +2,7 @@ module Telegraph
 
 using Reexport
 
+@reexport using Revise
 @reexport using RandomWalker
 @reexport using DataFrames
 @reexport using Random
