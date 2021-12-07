@@ -22,10 +22,8 @@ end
 function get_indices(state_time_series,t⃗)
 	
 
-	indss = @chain state_time_series begin 
-		get_all_indices(_)
-		_[1:end-1]
-	 end
+	indss = get_all_indices(state_time_series)[1:end-1]
+
 
 	# Separate times
 	# If first state is membrane
