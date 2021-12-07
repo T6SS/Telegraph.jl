@@ -7,7 +7,7 @@ using Reexport
 #@reexport using DataFrames
 #@reexport using Random
 #@reexport using Distributions
-@reexport using Chain
+#@reexport using Chain
 
 export
 	telegraph_points,
