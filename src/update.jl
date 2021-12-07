@@ -1,15 +1,15 @@
-function update(s::Int,λ₁Δt::Float64,λ₂Δt::Float64)
-	τ = rand()
+function update(s::Union{Int,Bool},λ₀::Float64,λ₁::Float64)
+	τ = rand() 
 	if s == 0
-		if τ < λ₁Δt
+		if τ < λ₀
 			s = 1
 		end
 	elseif s == 1
-		if τ < λ₂Δt
+		if τ < λ₁
 			s = 0
 		end
 	else
 		error("What state are you in? Answer: $(s)")
 	end
-	return s::Int
+	return s
 end
