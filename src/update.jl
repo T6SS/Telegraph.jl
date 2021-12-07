@@ -1,4 +1,4 @@
-function update(s::Union{Int,Bool},λ₀::Float64,λ₁::Float64)
+function update(s::Int,λ₀::Float64,λ₁::Float64)
 	τ = rand() 
 	if s == 0
 		if τ < λ₀
