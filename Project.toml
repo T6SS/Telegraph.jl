@@ -1,17 +1,1 @@
-name = "Telegraph"
-uuid = "d9abfcff-0c94-4277-a476-16906862b370"
-authors = ["Jonathan Miller"]
-version = "0.1.1"
-
 [deps]
-Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
-Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
-
-[compat]
-julia = "1"
-
-[extras]
-Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
-
-[targets]
-test = ["Test"]
