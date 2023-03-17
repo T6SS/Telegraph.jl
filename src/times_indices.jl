@@ -4,9 +4,9 @@ function get_all_indices(state_time_series)
 	# Initialise first index
 	push!(tᵦ,1)
 
-
+	sz_ts = size(state_time_series,1)
 	# Push body indices
-	for i in 2:size(state_time_series,1)
+	for i in 2:sz_ts
 		if state_time_series[i-1] == 0 && state_time_series[i] == 1
 			push!(tᵦ,i)
 		elseif state_time_series[i-1] == 1 && state_time_series[i] == 0
